@@ -1,134 +1,83 @@
-body {
-    margin-top: -5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 871px;
-    min-height: 800px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    border: 1px solid rgb(145, 145, 145);
-    margin: 0%;
+body {
+    color: black;
+    line-height: 1.6;
+    overflow: auto;
 }
 
-.up_side {
-    position: relative;
-    width: 100%;
-    max-width: 871px;
-    min-height: 100px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    border: 1px solid rgb(145, 145, 145);
-    margin: 0%;
-    background-color: rgb(0, 176, 176);
-    color: #000000;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-.container .left_side {
+.upside {
     position: relative;
-    padding: 40px;
-    width: 290px;
-    background-color: rgb(204, 204, 204);
-}
-
-.container .right_side {
-    position: relative;
-    padding: 40px;
-    background-color: #fff
-}
-
-.up_side .left_side {
-    position: relative;
-    padding-top: 10px;
-    padding-left: 60px;
-    padding-bottom: 10px;
-    width: 250px;
-}
-
-.up_side .right_side {
-    position: relative;
-    padding-top: 20px;
-    padding-left: 60px;
+    max-width: 100%;
+    margin: 0 0px;
+    width: auto;
+    height: 200px;
+    background-color: #00acac;
+    padding: 0 40px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 img {
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.profiletext {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    padding-top: 20px;
-}
+ .upside .nameandjob .name{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: bold;
+ }
 
-#name {
-    font-size: 40px;
-}
-
-#job {
-    font-size: 15px;
-}
-
-.container .left_side .title_left_side {
-    font-size: 20px;
-    padding-left: 10px;
-    padding-top: 20px;
-    display: flex;
-    align-items: right;
-}
-
-.container .left_side .body_left_side {
-    padding-left: 10px;
-    padding-top: 5px;
-    display: flex;
-    align-items: right;
-    font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 22px;
-}
-
-.container .right_side .title1_right_side {
-    font-size: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    display: flex;
-    align-items: right;
-}
-
-.container .right_side .title2_right_side {
+ .upside .nameandjob .job{
+    font-family: 'Montserrat';
     font-size: 18px;
-    padding-left: 20px;
-    padding-top: 15px;
-    display: flex;
-    align-items: right;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+ }
+
+.container {
+    max-width: 100%;
+    margin: 0 40px;
+    overflow: auto;
+    padding: 40 40px;
 }
 
-.container .right_side .body_right_side {
-    padding-left: 20px;
-    padding-top: 10px;
-    display: flex;
-    align-items: right;
-    font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 22px;
+.container .title{
+    position: relative;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+}
+
+.container .title1 {
+    position: relative;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.container .body1{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    padding-left:60px;
+    padding-right: 40px;
+    padding-bottom: 10px;
 }
